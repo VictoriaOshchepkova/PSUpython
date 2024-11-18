@@ -12,7 +12,7 @@ m = np.full((n,n),'.')
 
 m[1::2] = '*'
 m[::, 1::2] = '*'
-        
+
 print('Вы получили массив:')
-for row in m:
-    print(' '.join(row))
+for row in range(n):
+    print(*m[row])
