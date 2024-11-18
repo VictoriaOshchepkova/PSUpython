@@ -2,11 +2,12 @@ import numpy as np
 
 
 while True:
-    n = int(input('Введите натуральное число: '))
-    if n <= 0:
-        print('Введите корректное значение!')
+    n = int(input('Введите число > 0: '))
     if n > 0:
         break
+    if n <= 0:
+        print('Введите корректное значение!')
+    
     
 m = np.random.randint(1,101, size = (n,n))
 
