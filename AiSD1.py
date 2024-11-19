@@ -36,6 +36,8 @@ D = [3, 5, 6, 8, 9, 10, 12, 13, 15, 19, 20, 22, 23, 24, 28, 31, 32, 35, 37, 38, 
 
 ans = And(And(SimR(C,B),Or(SimR(C,D),SimR(A,D))),SimR(SimR(B,C),D))
 print('1)',ans)
+#out: 1) [4, 33, 34]
 
 ans = SimR(And(And(C,A),D),Or(And(And(A,SimR(B,C)),SimR(D,B)),SimR(Razn(D,A),B)))
 print('2)', ans)
+#out: 2) [19, 1, 2, 6, 14, 17, 18, 25, 27, 29, 35, 36, 38, 39]
